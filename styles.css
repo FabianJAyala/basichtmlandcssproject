@@ -1,0 +1,162 @@
+body {
+    background-color:#f5dfdb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3rem 5% 3rem 5%;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+a {
+    font-size: 1em;
+}
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+nav ul {
+    background-color: white;
+    box-shadow: 5px 5px #888888;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0% 1% 0% 1%;
+}
+
+nav a {
+    text-decoration: none;
+    color:#D0604C;
+}
+
+nav a:hover {
+    color:#888888;
+}
+
+section {
+    display: flex;
+}
+
+.banner {
+    flex: 1;
+    background-color: #D0604C;
+    box-shadow: 5px 5px white;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 5%;
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+.banner > h1 {
+    padding: 2% 1% 1% 2%;
+    color: white;
+    text-shadow: 3px 3px #888888;
+}
+
+.banner > h1:hover {
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.banner > p {
+    padding-left: 2%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+article {
+    flex: 1;
+    background-color: white;
+    box-shadow: 5px 5px #D0604C;
+    border-radius: 10px;
+    padding: 3% 2% 3% 2%;
+    margin: 1%;
+    margin-bottom: 5%;
+    animation-name: entry-animation;
+    animation-duration: 2s;
+}
+
+@keyframes entry-animation {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+article h2 {
+    color:#D0604C;
+}
+
+article h2:hover {
+    text-shadow: 1px 1px #ecbeb6;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vh;
+}
+
+article p {
+    color: #888888;
+}
+
+article a {
+    text-decoration: none;
+    color:#D0604C;
+}
+
+article a:hover {
+    color:#888888;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
+img > src {
+    align-content: left;
+    margin-left: 5%;
+}
+
+footer p {
+    margin-top: -2%;
+    color:#888888;
+    text-align: right;
+}
